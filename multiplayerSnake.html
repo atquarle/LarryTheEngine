@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			body {
+				background-color: powderblue;
+				margin: auto;
+				width: 650px;
+			}
+			div {
+				background-color: azure;
+				padding-bottom: 1px;
+				padding-left: 10px;
+				padding-right: 10px;
+				
+			}
+		</style>
+		<meta charset="UTF-8">
+		<title>Multiplayer Snake</title>
+	</head>
+	<body>
+		<div align="center">
+			<h1 align="center">Multiplayer Snake</h1>
+			<canvas id="canvas" width="600" height="550"></canvas>
+			
+			<h3 align="center">Instructions</h3>
+			<h4 align="left">For Online Multiplayer, the host must navigate to the online multiplayer option in the menu.
+			When asked if they are the host, press ok. Then enter the hosting Id you would like to use.
+			The other player will then navigate to the online multiplayer option.
+			When asked if they are the host, press cancel and enter the hosts game id.
+			Once the two peers are connected, the game will begin and both players can turn their snake using the arrow keys.
+			<br><br>
+			For Local Multiplayer player 1 uses the arrow keys and player 2 uses wasd to move.
+			Guide the snakes to red colored pellets in order to grow.
+			If left uneaten for too long, the red pellets will "rot" and become green.
+			These pellets will cause your snakes to shrink.
+			If a snake leaves the playzone, loses all its body segments, or crashes into another snake, the game is over.
+			The snake that does not cause the game to end will be given a bonus 10 points.
+			Whichever player has the most points at the end will be the winner.
+			The game can be paused using the spacebar.</h4>
+
+			<script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+			<script src="engine.js"></script>
+			<script src="multiplayerSnake.js"></script>
+		</div>
+		
+	</body>
+</html>

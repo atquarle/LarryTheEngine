@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: powderblue;
+            margin: auto;
+            width: 650px;
+        }
+        div {
+            background-color: azure;
+            padding-bottom: 1px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Features</title>
+</head>
+<body>
+<div align="center">
+    <span style="padding: 0 12px;"><a href="./index.html">Home</a></span>
+    <span style="padding: 0 12px;"><a href="./start.html">Getting Started</a></span>
+    <span style="padding: 0 12px;"><b>Features</b></span>
+    <span style="padding: 0 12px;"><a href="./gallery.html">Sample Games</a></span>
+
+    <h1 align="center">Features</h1>
+
+    <h3 align="center">Larry the Engine<br /><img src="Textures/LarryLogo.png" /></h3>
+    <h4 align="left">
+        <table style="width:100%">
+            <tr> <th><font color="#000088">Class</font></th> <th>Description</th> </tr>
+            <tr> <th><font color="#000088"><br />GameTime</font></th> <th><br />keeps track of time elapsed in game so that engine updates independently of frame rate.</th> </tr>
+            <tr> <th><font color="#000088"><br />FrameTimer</font></th> <th><br />counts down for every frame from a given count.</th> </tr>
+            <tr> <th><font color="#000088"><br />GameTimer</font></th> <th><br />counts down for every in-game millisecond from a given count.</th> </tr>
+            <tr> <th><font color="#000088"><br />Texture</font></th> <th><br />stores an image, along with image’s width, height and source.</th> </tr>
+            <tr> <th><font color="#000088"><br />Sprite</font></th> <th><br />keeps an image, position, width and height. Handles collisions with points and other sprites.</th> </tr>
+            <tr> <th><font color="#000088"><br />SpriteSheet</font></th> <th><br />keeps multiple images stored in a single texture, keeps current sprite.</th> </tr>
+            <tr> <th><font color="#000088"><br />Actor</font></th> <th><br />keeps its position.</th> </tr>
+            <tr> <th><font color="#000088"><br />ActorSprite</font></th> <th><br />(extends Actor) keeps position and sprite.</th> </tr>
+            <tr> <th><font color="#000088"><br />GamePiece</font></th> <th><br />(extends ActorSprite) keeps position, sprite, speed, direction, orientation, rotation, collisions, viewability, boundaries and timers of a game object.</th> </tr>
+            <tr> <th><font color="#000088"><br />Stage</font></th> <th><br />keeps arrays of Actors, FrameTimers, drawables and ParticleSystems. Keeps camera variable.</th> </tr>
+            <tr> <th><font color="#000088"><br />Particle</font></th> <th><br />contains actor, attributes (speed, direction, rotation).</th> </tr>
+            <tr> <th><font color="#000088"><br />ParticleSystem</font></th> <th><br />stores particle spawning point and array of particles. Functions include spawning and destroying particles.</th> </tr>
+            <tr> <th><font color="#000088"><br />Keyboard</font></th> <th><br />keeps a buffer of keyboard inputs, keeps track of last keycode pressed, keeps track of whether a key is currently pressed.</th> </tr>
+            <tr> <th><font color="#000088"><br />Keyboard2</font></th> <th><br />keeps a buffer of keyboard inputs.</th> </tr>
+            <tr> <th><font color="#000088"><br />Mouse</font></th> <th><br />keeps track of last position of click and whether mouse button is currently pressed.</th> </tr>
+            <tr> <th><font color="#000088"><br />Point</font></th> <th><br />keeps x and y positions.</th> </tr>
+            <tr> <th><font color="#000088"><br />Line</font></th> <th><br />vector that keeps the start and end points.</th> </tr>
+            <tr> <th><font color="#000088"><br />Box</font></th> <th><br />keeps position, width, height and checks for containment of sprite.</th> </tr>
+            <tr> <th><font color="#000088"><br />Boundary</font></th> <th><br />keeps an array of lines and keeps track of collisions involving those lines.</th> </tr>
+            <tr> <th><font color="#000088"><br />SquareGrid</font></th> <th><br />contains grid size, interval of positions within grid and obstacles inside of the grid.</th> </tr>
+            <tr> <th><font color="#000088"><br />breadthFirstSearch()</font></th> <th><br />method of traversing grid which looks at nearest nodes first when searching for a path to a given end point from a given starting point.</th> </tr>
+            <tr> <th><font color="#000088"><br />Menu</font></th> <th><br />stores sprite for menu, the number of possible selections and current selection.</th> </tr>
+            <tr> <th><font color="#000088"><br />Queue</font></th> <th><br />puts newest input at the end of its buffer, removes oldest input from the front of the buffer.</th> </tr>
+            <tr> <th><font color="#000088"><br />Text</font></th> <th><br />stores string, position, fillstyle and font.</th> </tr>
+        </table>
+    </h4>
+</div>
+</body>
+</html>

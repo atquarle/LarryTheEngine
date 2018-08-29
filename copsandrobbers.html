@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			body {
+				background-color: powderblue;
+				margin: auto;
+				width: 650px;
+			}
+			div {
+				background-color: azure;
+				padding-bottom: 1px;
+				padding-left: 10px;
+				padding-right: 10px;
+				
+			}
+		</style>
+		<meta charset="UTF-8">
+		<title>Cops and Robbers</title>
+	</head>
+	<body>
+		<div align="center">
+			<h1 align="center">Cops and Robbers</h1>
+			<canvas id="canvas" width="600" height="600"></canvas>
+			
+			<h3 align="center">Instructions</h3>
+			<h4 align="left">Using the arrow keys to move, move your robber away from the cops.
+			If two cops are adjacent to a robber, the robber will be caught and removed from the game.
+			If all robbers are caught, the cops will win.
+			If all of the robbers are not caught at the end of the time limit, the robbers win.
+			If a robber only has one direction of movement, the cops can catch him by having just one cop adjacent.
+			Arrows indicate the tile you will be placed on when moving to it.
+			If you are unable to move, you may press spacebar to pass.</h4>
+
+			<script src="engine.js"></script>
+			<script src="copsandrobbers.js"></script>
+		</div>
+		
+	</body>
+</html>

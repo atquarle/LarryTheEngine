@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: powderblue;
+            margin: auto;
+            width: 650px;
+        }
+        div {
+            background-color: azure;
+            padding-bottom: 1px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Getting Started</title>
+</head>
+<body>
+<div align="center">
+    <span style="padding: 0 12px;"><a href="./index.html">Home</a></span>
+    <span style="padding: 0 12px;"><b>Getting Started</b></span>
+    <span style="padding: 0 12px;"><a href="./features.html">Features</a></span>
+    <span style="padding: 0 12px;"><a href="./gallery.html">Sample Games</a></span>
+
+    <h1 align="center">Getting Started</h1>
+	<h3 align="center"><font color="#000088">Where to Download</font></h3>
+	<p>The whole engine can be pulled from the <a href="https://github.ncsu.edu/jahutche/LarryTheEngine">github repository</a>.
+	Once pulled, the core engine is called "engine.js" and you will need to call it in your html before you call your game javascript.</p>
+	<br>
+	<h3 align="center"><font color="#000088">External Dependencies</font></h3>
+	<p>This engine does all collision and physics based calculations on its own, so it doesn't rely on any external libraries like Box2D.</p>
+	<br>
+	<h3 align="center"><font color="#000088">File Organization</font></h3>
+	<p>The "engine.js" file will can be kept wherever as long as you call it properly in your game's html.
+	However, the texture folder needs to be in the same directory as the "engine.js" file.
+	All of your sprites should be kept in your textures folder to be used properly.</p>
+	<br>
+	<h3 align="center"><font color="#000088">How to Get Started</font></h3>
+	<p>Our engine creates the stage, canvas, and event listeners on its own, so the only thing needed to be setup when beginning
+	is an update function and a draw function. A call to the engine function "startGame(deltaT)" needs to be made at the end of the
+	file to start the game. Update will always happen before draw in the main callback.</p>
+</div>
+</body>
+</html>
